@@ -34,7 +34,7 @@ Create a crontab entry to run the script every 5 minutes
 
 Here the possible Settings for the Cleaning mode Switch:
 
-[logo]: https://github.com/DaKarlii/Domoticz_Ecovacs_Deebot_Implementation/raw/master/pictures/Domoticz_Switch_Settings.jpg "Domoticz Switch Settings"
+![alt text](https://github.com/DaKarlii/Domoticz_Ecovacs_Deebot_Implementation/raw/master/pictures/Domoticz_Switch_Settings.jpg "Domoticz Switch Settings")
 
 
 ## Features
