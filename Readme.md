@@ -25,7 +25,7 @@ Install Python Plugin Deebotozmo (Next Step or use the original from Repository)
 
 Create the Config for Deebotozmo with the same user, which is running the Domoticz Service!
 
-**~/deebot/venv/bin $ ./deebotozmo createconfig **
+~/deebot/venv/bin $ ./deebotozmo createconfig
 
 copy the *files/doozmo.sh* - template to your Script directory
 
