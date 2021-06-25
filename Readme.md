@@ -17,17 +17,17 @@ Create new Devices
 
 Install Python Plugin Deebotozmo (Next Step or use the original from Repository)
 
-sudo apt-get install python3-venv libatlas-base-dev 
-sudo ./deebot && cd ./deebot
-python3 -m venv venv
-source venv/bin/activate
-pip install deebotozmo
+* sudo apt-get install python3-venv libatlas-base-dev 
+* sudo ./deebot && cd ./deebot
+* python3 -m venv venv
+* source venv/bin/activate
+* pip install deebotozmo
 
 Create the Config for Deebotozmo with the same user, which is running the Domoticz Service!
 
-~/deebot/venv/bin $ ./deebotozmo createconfig
+**~/deebot/venv/bin $ ./deebotozmo createconfig **
 
-copy the files/doozmo.sh - template to your directory (rename it to doozmo.sh)
+copy the *files/doozmo.sh* - template to your Script directory
 
 Create a crontab entry to run the script every 5 minutes
 
@@ -55,5 +55,3 @@ Nothing Planned for the moment
 
 * https://github.com/And3rsL/Deebotozmo
 * https://github.com/domoticz/domoticz
-
-
