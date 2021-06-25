@@ -7,10 +7,10 @@
 # V1.0: 20210624 - Basic Initial Script
 
 # User Settings
-SERVER='URL-IP:PORT/'                               # Domoticz Server Url
-VACSTATIDX=xxx                                      # Domoticz IDX for Ozmo Status (Type: Virtual, General, Text)
-VACBATTIDX=xxx                                      # Domoticz IDX for Ozmo Battery (Type: Virtual, General, Percentage)
-VACMODIDX=xxx                                       # Domoticz IDX for Ozmo Modus (Type: Virual, General, Switch)              
+SERVER='smarthome.aiserfeld.ovh:8086/'                               # Domoticz Server Url
+VACSTATIDX=275                                      # Domoticz IDX for Ozmo Status (Type: Virtual, General, Text)
+VACBATTIDX=276                                     # Domoticz IDX for Ozmo Battery (Type: Virtual, General, Percentage)
+VACMODIDX=272                                       # Domoticz IDX for Ozmo Modus (Type: Virual, General, Switch)              
 deebotlib='/scripts/deebot/venv/bin/deebotozmo'     # Edit path if you installed the libary to another location
 
 # Global Settings (Dont Change if you dont know what you do)

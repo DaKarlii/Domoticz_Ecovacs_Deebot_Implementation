@@ -1,41 +1,47 @@
-# iBBQ-Gateway-Fork for Domoticz
+# Script and Installguide to implement Ecovacs Deebot Vacuum cleaners to Domoticz
 
-an ESP32 Based iBBQ (Inkbird) BLE to MQTT Gateway. This is an fork of runningtoy/InkBird_BLE2MQTT
 
 ## Requirements
 
-Wemos Lolin 32 (or other ESP32 Boards)
-MS Visual Studio Code with PlatformIO
-Domoticz with configured MQTT Client Gateway with LAN interface
-an Inkbird IBT Thermometer
+Domoticz (https://github.com/domoticz/domoticz)
+Ecovacs Deebot (Script tested and in use with an Ozmo 950)
+Python Plugin Deebotozmo (https://github.com/And3rsL/Deebotozmo)
 
 ## Usage
 
 In Domoticz:
-Create new virtual Temperature Devices (in ascending IDX order) for each [possible] Probe.
-eg. IBT-2x --> 2 virtuel Temp Devices
-Create new virtual Percentage Device for the Battery Level
+Create new Devices 
+Status (Type: Virtual, General, Text)
+Battery (Type: Virtual, General, Percentage)
+Modus (Type: Virual, General, Switch) 
 
-In VSCode:
-Before Flashing create/edit the "src/credentials.h" and "src/domoticz.h". 
-You can find the example files in the directory.
+Install Python Plugin Deebotozmo (Next Step or use the original from Repository)
 
-After flashing the device should be connected to your WiFi and your MQTT broker.
+sudo apt-get install python3-venv libatlas-base-dev 
+sudo ./deebot && cd ./deebot
+python3 -m venv venv
+source venv/bin/activate
+pip install deebotozmo
 
-While boot up, the Gateway is lloking for the BBQ Thermometer and will connect to it Automatically.
-After successfully connected per BLE the Gateway starts publishing the Tempdata to MQTT/Domoticz.
+Create the Config for Deebotozmo with the same user, which is running the Domoticz Service!
 
+~/deebot/venv/bin $ ./deebotozmo createconfig
+
+copy the /script/doozmo.sh - template to your directory (rename it to doozmo.sh)
+
+Create a crontab entry to run the script every 5 minutes
 
 ## Features
 
-* Automatically connects to iBBQ Bluetooth BBQ thermometers (tested with InkBird IBT-6X and IBT-2X)
-* Adapts amount of channels to connected thermometer
-* Should work with most ESP32 boards available
-* Should work with iBBQ based Bluetooth BBQ thermometers with up to 8 channels
-* Publish temperature (Celsius) and battery Level to MQTT/Domoticz
-* Battery status according to (https://github.com/sworisbreathing/go-ibbq/issues/2#issuecomment-650725433)
+* Start Cleaning, Send to Dock, Pause/Resume Cleaning from Domoticz
+* Get Status of Cleaning and Batterylevel in Domoticz
 
 ## ToDO
+Nothing Planned for the moment
 
-## Protocol description
-(https://gist.github.com/uucidl/b9c60b6d36d8080d085a8e3310621d64)
+## used Repositorys:
+
+https://github.com/And3rsL/Deebotozmo
+https://github.com/domoticz/domoticz
+
+
