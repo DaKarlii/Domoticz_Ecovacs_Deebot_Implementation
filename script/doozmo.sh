@@ -3,7 +3,7 @@
 # V1.0: 20210624 - Basic Initial Script
 
 # User Settings
-SERVER='URL-IP:8086/'                           # Domoticz Server Url
+SERVER='URL-IP:PORT/'                           # Domoticz Server Url
 VACSTATIDX=xxx                                  # Domoticz IDX for Ozmo Status (Type: Virtual, General, Text)
 VACBATTIDX=xxx                                  # Domoticz IDX for Ozmo Battery (Type: Virtual, General, Percentage)
 VACMODIDX=xxx                                   # Domoticz IDX for Ozmo Modus (Type: Virual, General, Switch)              
