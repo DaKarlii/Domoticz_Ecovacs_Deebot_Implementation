@@ -37,6 +37,12 @@ Here the possible Settings for the Cleaning mode Switch:
 ![alt text](https://github.com/DaKarlii/Domoticz_Ecovacs_Deebot_Implementation/raw/master/pictures/Domoticz_Switch_Settings.jpg "Domoticz Switch Settings")
 
 
+Ozmo Status in Domoticz:
+
+![alt text](https://github.com/DaKarlii/Domoticz_Ecovacs_Deebot_Implementation/raw/master/pictures/Domoticz_Statuses.jpg "Domoticz Ozmo Statuses")
+
+
+
 ## Features
 
 * Start Cleaning, Send to Dock, Pause/Resume Cleaning from Domoticz
