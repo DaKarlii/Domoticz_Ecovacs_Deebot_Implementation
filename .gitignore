@@ -4,4 +4,5 @@
 .vscode/launch.json
 .vscode/ipch
 .vscode/extensions.json
-script/doozmo.sh
+
+files/doozmo.sh

@@ -3,9 +3,9 @@
 
 ## Requirements
 
-Domoticz (https://github.com/domoticz/domoticz)
-Ecovacs Deebot (Script tested and in use with an Ozmo 950)
-Python Plugin Deebotozmo (https://github.com/And3rsL/Deebotozmo)
+* Domoticz (https://github.com/domoticz/domoticz)
+* Ecovacs Deebot (Script tested and in use with an Ozmo 950)
+* Python Plugin Deebotozmo (https://github.com/And3rsL/Deebotozmo)
 
 ## Usage
 
