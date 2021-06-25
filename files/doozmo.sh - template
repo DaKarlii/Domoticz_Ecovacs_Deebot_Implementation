@@ -19,28 +19,28 @@ SWITCH_CMD='json.htm?type=command&param=switchlight&'       # changes Value and 
 
 # Programpart (Dont Change if you dont know what you do)
 
-echo "Load Status from cloud"
+#echo "Load Status from cloud"
 deebotlibcache='./doozmolib.cache'
 $deebotlib statuses > $deebotlibcache
 vac_stat=`cat $deebotlibcache | awk '/Vacuum / {print $3}'`
 vac_batt=`cat $deebotlibcache | awk '/Battery/ {print $2}'`
-echo $vac_stat
-echo $vac_batt
+#echo $vac_stat
+#echo $vac_batt
 
 if  [ "$vac_stat" == "STATE_DOCKED" ] ; then
-    echo "Ozmo is in resting in Dock"
+#    echo "Ozmo is in resting in Dock"
     hostcmd="http://${SERVER}${SERVER_CMD}idx=${VACSTATIDX}&nvalue=0&svalue=Laden"
     wget -q --delete-after "$hostcmd" >/dev/null 2>&1
 elif  [ "$vac_stat" == "STATE_CLEANING" ] ; then
-    echo "Ozmo is Cleaning your Room"
+#    echo "Ozmo is Cleaning your Room"
     hostcmd="http://${SERVER}${SERVER_CMD}idx=${VACSTATIDX}&nvalue=0&svalue=Reinigen"
     wget -q --delete-after "$hostcmd" >/dev/null 2>&1
 elif  [ "$vac_stat" == "STATE_PAUSED" ] ; then
-    echo "Ozmo is takes a manual break"
+#    echo "Ozmo takes a manual break"
     hostcmd="http://${SERVER}${SERVER_CMD}idx=${VACSTATIDX}&nvalue=0&svalue=Pausiert"
     wget -q --delete-after "$hostcmd" >/dev/null 2>&1
 elif  [ "$vac_stat" == "STATE_ERROR" ] ; then
-    echo "Ozmo is takes a manual break"
+#    echo "Ozmo has an Error, please check App"
     hostcmd="http://${SERVER}${SERVER_CMD}idx=${VACSTATIDX}&nvalue=0&svalue=Fehler"
     wget -q --delete-after "$hostcmd" >/dev/null 2>&1
 else
