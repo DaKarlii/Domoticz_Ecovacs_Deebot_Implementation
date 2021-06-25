@@ -27,9 +27,15 @@ Create the Config for Deebotozmo with the same user, which is running the Domoti
 
 ~/deebot/venv/bin $ ./deebotozmo createconfig
 
-copy the /script/doozmo.sh - template to your directory (rename it to doozmo.sh)
+copy the files/doozmo.sh - template to your directory (rename it to doozmo.sh)
 
 Create a crontab entry to run the script every 5 minutes
+
+
+Here the possible Settings for the Cleaning mode Switch:
+
+![alt text](https://github.com/DaKarlii/Domoticz_Ecovacs_Deebot_Implementation/raw/master/pictures/Domoticz_Switch_Settings.jpg "Domoticz Switch Settings")
+
 
 ## Features
 
