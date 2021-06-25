@@ -11,9 +11,9 @@
 
 In Domoticz:
 Create new Devices 
-Status (Type: Virtual, General, Text)
-Battery (Type: Virtual, General, Percentage)
-Modus (Type: Virual, General, Switch) 
+* Status (Type: Virtual, General, Text)
+* Battery (Type: Virtual, General, Percentage)
+* Modus (Type: Virual, General, Switch) 
 
 Install Python Plugin Deebotozmo (Next Step or use the original from Repository)
 
@@ -39,9 +39,9 @@ Create a crontab entry to run the script every 5 minutes
 ## ToDO
 Nothing Planned for the moment
 
-## used Repositorys:
+## used Repositorys (Thanks to the people who are developing that):
 
-https://github.com/And3rsL/Deebotozmo
-https://github.com/domoticz/domoticz
+* https://github.com/And3rsL/Deebotozmo
+* https://github.com/domoticz/domoticz
 
 
