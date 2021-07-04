@@ -18,7 +18,7 @@ Create new Devices
 Install Python Plugin Deebotozmo (Next Step or use the original from Repository)
 
 * sudo apt-get install python3-venv libatlas-base-dev 
-* sudo ./deebot && cd ./deebot
+* sudo mkdir ~/deebot && cd ~/deebot
 * python3 -m venv venv
 * source venv/bin/activate
 * pip install deebotozmo
